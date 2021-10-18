@@ -18,6 +18,8 @@ class CreateWorldCountriesTable extends Migration {
 			$table->bigInteger('continent_id')->unsigned()->comment('Continent ID');
 			$table->string('name', 255)->default('')->comment('Country Common Name');
 			$table->string('full_name', 255)->nullable()->comment('Country Fullname');
+			$table->string('latitude',255)->nullable()->comment('Country Latitude');
+			$table->string('longitude', 255)->nullable()->comment('Country Longitude');
 			$table->string('capital', 255)->nullable()->comment('Capital Common Name');
 			$table->string('code', 4)->nullable()->comment('ISO3166-1-Alpha-2');
 			$table->string('code_alpha3', 6)->nullable()->comment('ISO3166-1-Alpha-3');
